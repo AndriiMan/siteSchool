@@ -3,6 +3,7 @@ package ua.site.BD.dao.CRUD;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
+//Class to connect to bd
 public class DB_Connection {
     public static void main(String[] args) {
         DB_Connection obj_DB_Connection=new DB_Connection();
