@@ -11,20 +11,19 @@
 <div style="text-align: center;">
     <h3>Login Here</h3>
 
-    <form action="<c:url value="/Controllers/SignInController/sign_in_controller.jsp"/>" , method="post" >
+    <form action="signController" method="post">
         Enter User Login
         <input type="text" name="login"> <br>
         Enter Password
         <input type="password" name="password"><br>
         <input type="submit" value="Submit">
+
+        <%--Out message of problem with login--%>
+        <h3>
+            <c:out value="${loginMessage}"/>
+        </h3>
     </form>
-    <%
-        String message=(String)session.getAttribute("login_message");
-        if(message!=null){
-            out.println(message);
-            //to delete message
-            session.removeAttribute("login_message");
-        }
-    %>
+
+
 </div>
 </body>

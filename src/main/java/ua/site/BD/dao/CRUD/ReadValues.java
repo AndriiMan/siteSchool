@@ -8,14 +8,15 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+//Class for output users. UsersAll.
 public class ReadValues {
     public static void main(String[] args) {
-        ReadValues obj_ReadValues=new ReadValues();
-        obj_ReadValues.get_values();
+        ReadValues objReadValues=new ReadValues();
+        objReadValues.getValues();
     }
-    public List get_values(){
-        DB_Connection obj_DB_Connection=new DB_Connection();
-        Connection connection=obj_DB_Connection.get_connection();
+    public List getValues(){
+        BDConnection objBDConnection =new BDConnection();
+        Connection connection= objBDConnection.getConnection();
         PreparedStatement ps=null;
         ResultSet rs=null;
         List list=new ArrayList();
@@ -24,7 +25,7 @@ public class ReadValues {
             ps=connection.prepareStatement(querry);
             rs=ps.executeQuery();
             while(rs.next()){
-                User obj_User=new User();
+                User objUser=new User();
 
                 //Console Check out information
                 /*System.out.println(rs.getString("id"));
@@ -32,22 +33,20 @@ public class ReadValues {
                 System.out.println(rs.getString("password"));
                 System.out.println(rs.getString("name"));
                 System.out.println(rs.getString("surname"));
-                System.out.println(rs.getString("subject_id1"));
-                System.out.println(rs.getString("subject_id2"));
-                System.out.println(rs.getString("subject_id3"));
-                System.out.println(rs.getString("specialization_id"));
+                System.out.println(rs.getString("subjectId"));
+                System.out.println(rs.getString("specializationId"));
                 System.out.println(rs.getString("mark"));
                 System.out.println();*/
 
-                obj_User.setId(rs.getInt("id"));
-                obj_User.setLogin(rs.getString("login"));
-                obj_User.setPassword(rs.getString("password"));
-                obj_User.setName(rs.getString("name"));
-                obj_User.setSurname(rs.getString("surname"));
-                obj_User.setSubjectid(rs.getInt("subject_id"));
-                obj_User.setSpecialization(rs.getInt("specialization_id"));
-                obj_User.setMark(rs.getInt("mark"));
-                list.add(obj_User);
+                objUser.setId(rs.getInt("id"));
+                objUser.setLogin(rs.getString("login"));
+                objUser.setPassword(rs.getString("password"));
+                objUser.setName(rs.getString("name"));
+                objUser.setSurname(rs.getString("surname"));
+                objUser.setSubjectId(rs.getInt("subjectId"));
+                objUser.setSpecialization(rs.getInt("specializationId"));
+                objUser.setMark(rs.getInt("mark"));
+                list.add(objUser);
             }
         } catch (Exception e) {
             System.out.println(e);

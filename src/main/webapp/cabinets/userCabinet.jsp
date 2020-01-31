@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Lenovo
@@ -8,9 +9,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>$Title$</title>
+    <title>UserCabinet</title>
 </head>
 <body>
-$END$
+
+<h3>
+    <c:out value="${userSession}"/>
+</h3>
+
 </body>
 </html>

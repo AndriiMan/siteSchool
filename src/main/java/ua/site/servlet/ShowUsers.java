@@ -14,22 +14,22 @@ import java.util.concurrent.CopyOnWriteArrayList;
 @WebServlet("/showUsers")
 public class ShowUsers extends HttpServlet {
 
-    private List<User> users;
+    //private List<User> users;
 
-    @Override
+   /* @Override
     public void init() throws ServletException {
 
         System.out.println("In controller ShowUser");
         users = new CopyOnWriteArrayList<>();
         //users= SignInDAO.getUsers();
 
-    }
+    }*/
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 
-        req.setAttribute("users", users);
+        //req.setAttribute("users", users);
         //req.getRequestDispatcher(index).forward(req, resp);
         req.getRequestDispatcher("/WEB-INF/view/showUsers.jsp").forward(req, resp);
 

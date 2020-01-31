@@ -8,18 +8,18 @@ public class User {
     private String password;
     private String name;
     private String surname;
-    private int subjectid;
+    private int subjectId;
     private int specialization;
     private int mark;
 
 
-    public User(int id, String login, String password, String name, String surname, int subjectid, int specialization) {
+    public User(int id, String login, String password, String name, String surname, int subjectId, int specialization) {
         this.id = id;
         this.login = login;
         this.password = password;
         this.name = name;
         this.surname = surname;
-        this.subjectid = subjectid;
+        this.subjectId = subjectId;
         this.specialization = specialization;
         this.mark = mark;
 
@@ -27,6 +27,11 @@ public class User {
 
     public User() {
 
+    }
+
+    public User(String login, String password) {
+        this.login = login;
+        this.password = password;
     }
 
 
@@ -70,12 +75,12 @@ public class User {
         this.surname = surname;
     }
 
-    public int getSubjectid() {
-        return subjectid;
+    public int getSubjectId() {
+        return subjectId;
     }
 
-    public void setSubjectid(int subjectid) {
-        this.subjectid = subjectid;
+    public void setSubjectId(int subjectId) {
+        this.subjectId = subjectId;
     }
 
     public int getSpecialization() {

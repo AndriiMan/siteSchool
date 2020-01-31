@@ -4,12 +4,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 //Class to connect to bd
-public class DB_Connection {
+public class BDConnection {
     public static void main(String[] args) {
-        DB_Connection obj_DB_Connection=new DB_Connection();
-        System.out.println(obj_DB_Connection.get_connection());
+        BDConnection objBDConnection =new BDConnection();
+        System.out.println(objBDConnection.getConnection());
     }
-    public Connection get_connection(){
+    public Connection getConnection(){
         Connection connection=null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");

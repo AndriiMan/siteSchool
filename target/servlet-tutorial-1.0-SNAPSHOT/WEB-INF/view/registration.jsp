@@ -7,7 +7,7 @@
 
 <h2>New user</h2><br/>
 
-<form method="post" action="/Project_war/Controllers/InsertController/insertController.jsp">
+<form method="post" action="registration">
 
     <label><input type="text" name="login"></label>Login<br>
 
@@ -17,7 +17,7 @@
 
     <label><input type="text" name="surname"></label>Surname<br>
 
-    <label><input type="number" name="subject_id"></label>Subject<br>
+    <label><input type="number" name="subjectId"></label>Subject<br>
 
 
     <%--Because in room--%>

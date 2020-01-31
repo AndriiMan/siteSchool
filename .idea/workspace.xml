@@ -6,7 +6,62 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9736494a-7111-46c5-b815-a244e36d9024" name="Default Changelist" comment="" />
+    <list default="true" id="9736494a-7111-46c5-b815-a244e36d9024" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c8c3c745-47fd-4058-9d3e-0724cd94575f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c8c3c745-47fd-4058-9d3e-0724cd94575f.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/site/BD/dao/CRUD/BDConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/site/BD/dao/CRUD/BDConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/site/BD/dao/CRUD/EditValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/site/BD/dao/CRUD/EditValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/site/BD/dao/CRUD/InsertValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/site/BD/dao/CRUD/InsertValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/site/BD/dao/CRUD/ReadValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/site/BD/dao/CRUD/ReadValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/site/modal/LoginModal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/site/modal/LoginModal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/site/model/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/site/model/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/site/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/site/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/site/servlet/GetIndexPageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/site/servlet/GetIndexPageServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/site/servlet/LogIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/site/servlet/LogIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/site/servlet/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/site/servlet/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/site/servlet/ShowUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/site/servlet/ShowUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ua/site/servlet/UserCabinet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ua/site/servlet/UserCabinet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Controllers/InsertController/insertController.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Login/logIn.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Login/logIn.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showUsers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/showUsers.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cabinets/userCabinet.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cabinets/userCabinet.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/site/BD/dao/CRUD/DB_Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/site/BD/dao/CRUD/EditValues.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/site/BD/dao/CRUD/EditValues.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/site/BD/dao/CRUD/InsertValues.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/site/BD/dao/CRUD/InsertValues.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/site/BD/dao/CRUD/ReadValues.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/site/BD/dao/CRUD/ReadValues.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/site/modal/Login_Modal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/site/model/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/site/model/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/site/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/site/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/site/servlet/GetIndexPageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/site/servlet/GetIndexPageServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/site/servlet/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/site/servlet/LogIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/site/servlet/Registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/site/servlet/Registration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ua/site/servlet/ShowUsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ua/site/servlet/ShowUsers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/Controllers/InsertController/insertController.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/Controllers/SignInController/sign_in_controller.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/Login/logIn.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/Login/logIn.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/BD/dao/CRUD/DB_Connection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/BD/dao/CRUD/EditValues.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/BD/dao/CRUD/EditValues.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/BD/dao/CRUD/InsertValues.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/BD/dao/CRUD/InsertValues.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/BD/dao/CRUD/ReadValues.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/BD/dao/CRUD/ReadValues.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/modal/Login_Modal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/model/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/model/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/servlet/GetIndexPageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/servlet/GetIndexPageServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/servlet/LogIn.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/servlet/LogIn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/servlet/Registration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/servlet/Registration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/servlet/ShowUsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/classes/ua/site/servlet/ShowUsers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/view/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/view/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/view/logIn.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/view/logout.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/view/registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/view/registration.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/view/showUsers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/WEB-INF/view/showUsers.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/registration_page.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/servlet-tutorial-1.0-SNAPSHOT/welcomeUser.jsp" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +113,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -73,8 +131,10 @@
     </option>
   </component>
   <component name="ProjectId" id="1X1bgWXu7t3GhDI4vv4NOK991tK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
@@ -221,11 +281,22 @@
       <option name="presentableId" value="Default" />
       <updated>1580216659643</updated>
       <workItem from="1580216662988" duration="12983000" />
-      <workItem from="1580287642410" duration="24123000" />
+      <workItem from="1580287642410" duration="56476000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

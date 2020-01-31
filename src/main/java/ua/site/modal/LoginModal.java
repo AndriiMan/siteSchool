@@ -1,6 +1,6 @@
 package ua.site.modal;
 
-import ua.site.BD.dao.CRUD.DB_Connection;
+import ua.site.BD.dao.CRUD.BDConnection;
 import ua.site.model.User;
 
 import java.sql.Connection;
@@ -9,18 +9,18 @@ import java.sql.ResultSet;
 
 
 //Class for login
-public class Login_Modal {
-    public boolean check_user_name(User obj_User) {
+public class LoginModal {
+    public boolean checkUserName(User objUser) {
         boolean flag = false;
-        DB_Connection obj_DB_Connection = new DB_Connection();
-        Connection connection = obj_DB_Connection.get_connection();
+        BDConnection objBDConnection = new BDConnection();
+        Connection connection = objBDConnection.getConnection();
         PreparedStatement ps = null;
         ResultSet rs = null;
         try {
             String qurey = "select * from mybdtest.schoolchildren where login=? and password=?";
             ps = connection.prepareStatement(qurey);
-            ps.setString(1, obj_User.getLogin());
-            ps.setString(2, obj_User.getPassword());
+            ps.setString(1, objUser.getLogin());
+            ps.setString(2, objUser.getPassword());
 
             // See Prepared statement
             //System.out.println(ps);
