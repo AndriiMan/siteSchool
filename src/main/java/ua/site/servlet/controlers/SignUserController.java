@@ -1,5 +1,6 @@
 package ua.site.servlet;
 
+import com.mysql.cj.Session;
 import ua.site.modal.LoginModal;
 import ua.site.model.User;
 
@@ -11,10 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet("/signController")
-public class SignControllerServlet extends HttpServlet {
-
-
+@WebServlet("/signUserController")
+public class SignUserController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -39,11 +38,12 @@ public class SignControllerServlet extends HttpServlet {
             System.out.println(user.getName());
             System.out.println("Good acceess user");
 
-            //To get userName that was login
-            session.setAttribute("userNameSession", user.getName());
-            session.setAttribute("userLoginSession", user.getLogin());
+            //To get all user data that was login
+            setSessionUserData(session,user);
+            /*session.setAttribute("userNameSession", user.getName());
+            session.setAttribute("userSurnameSession", user.getSurname());
             session.setAttribute("userSubjectSession", user.getSubjectId());
-            session.setAttribute("userMarkSession", user.getMark());
+            session.setAttribute("userMarkSession", user.getMark());*/
 
             resp.sendRedirect("userCab");
         }
@@ -58,5 +58,11 @@ public class SignControllerServlet extends HttpServlet {
             ////To login
             resp.sendRedirect("logIn");
         }
+    }
+    public void setSessionUserData(HttpSession session, User user){
+        session.setAttribute("userNameSession", user.getName());
+        session.setAttribute("userSurnameSession", user.getSurname());
+        session.setAttribute("userSubjectSession", user.getSubject_col());
+        session.setAttribute("userMarkSession", user.getMark());
     }
 }
