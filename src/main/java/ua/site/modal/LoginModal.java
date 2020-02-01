@@ -10,20 +10,25 @@ import java.sql.ResultSet;
 
 //Class for login
 public class LoginModal {
-    public boolean checkUserName(User objUser) {
+
+
+    public boolean checkUserLogin(User objUser) {
         boolean flag = false;
         BDConnection objBDConnection = new BDConnection();
         Connection connection = objBDConnection.getConnection();
         PreparedStatement ps = null;
         ResultSet rs = null;
         try {
-            String qurey = "select * from mybdtest.schoolchildren where login=? and password=?";
-            ps = connection.prepareStatement(qurey);
+
+            ps = connection.prepareStatement("select * from mybdtest.schoolchildren " +
+                                      " where login=? and password=?");
+
             ps.setString(1, objUser.getLogin());
             ps.setString(2, objUser.getPassword());
 
             // See Prepared statement
-            //System.out.println(ps);
+            System.out.println(ps);
+            System.out.println("Name is "+objUser.getName());
 
             rs = ps.executeQuery();
             if (rs.next()) {

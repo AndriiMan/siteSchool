@@ -21,7 +21,9 @@ public class ReadValues {
         ResultSet rs=null;
         List list=new ArrayList();
         try {
-            String querry="select * from mybdtest.schoolchildren";
+            String querry="select * from mybdtest.schoolchildren " +
+                    "inner join mybdtest.subject on schoolchildren.subjectId=subject.subjectId " +
+                    "inner join mybdtest.specialization on schoolchildren.specializationId=specialization.specialization_id";
             ps=connection.prepareStatement(querry);
             rs=ps.executeQuery();
             while(rs.next()){
@@ -44,7 +46,9 @@ public class ReadValues {
                 objUser.setName(rs.getString("name"));
                 objUser.setSurname(rs.getString("surname"));
                 objUser.setSubjectId(rs.getInt("subjectId"));
-                objUser.setSpecialization(rs.getInt("specializationId"));
+                objUser.setSubject_col(rs.getString("subject_col"));
+                objUser.setSpecializationId(rs.getInt("specializationId"));
+                objUser.setSpecialization(rs.getString("specialization"));
                 objUser.setMark(rs.getInt("mark"));
                 list.add(objUser);
             }

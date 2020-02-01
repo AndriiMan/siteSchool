@@ -1188,19 +1188,20 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="298" parent="285" name="subjectId">
+    <column id="298" parent="285" name="specializationId">
       <Position>6</Position>
       <DataType>varchar(45)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="299" parent="285" name="specializationId">
+    <column id="299" parent="285" name="mark">
       <Position>7</Position>
-      <DataType>varchar(45)|0s</DataType>
+      <DataType>int(11)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="300" parent="285" name="mark">
+    <column id="300" parent="285" name="subjectId">
       <Position>8</Position>
       <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="301" parent="285" name="PRIMARY">
@@ -1232,7 +1233,7 @@
       <ColNames>specialization_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="306" parent="287" name="subject_id">
+    <column id="306" parent="287" name="subjectId">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1247,7 +1248,7 @@
     </column>
     <key id="308" parent="287" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>subject_id</ColNames>
+      <ColNames>subjectId</ColNames>
       <Primary>1</Primary>
     </key>
   </database-model>

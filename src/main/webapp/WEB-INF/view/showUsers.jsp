@@ -11,43 +11,39 @@
 </head>
 <body>
 <div style="text-align: center;">
+    <form action="showUsers" method="post">
+        <hr>
+        <h3>
+            TABLE FOR DATE
+            <table border="1">
+            <tr>
+                <td>Id</td>
+                <td>Name</td>
+                <td>Surname</td>
+                <%--<td>SubjectId</td>--%>
+                <%--<td>SpecializationID</td>--%>
+                <td>Specialization</td>
+                <td>Mark</td>
+                <td>Subject</td>
 
-    <hr>
-    <%
-        ReadValues objReadValues=new ReadValues();
-        List<User> list=objReadValues.getValues();
-        Iterator<User> itList=list.iterator();
-    %>
-    <%--tABLE FOR DATE--%>
-    <table border="1">
-        <tr>
-            <td>Id</td>
-            <td>Name</td>
-            <td>Surname</td>
-            <td>Subject</td>
-            <td>Specialization</td>
-            <td>Mark</td>
+            </tr>
+            <c:forEach items="${userSession}" var="user">
+                <tr>
+                    <td><c:out value="${user.id}"/></td>
+                    <td><c:out value="${user.name}"/></td>
+                    <td><c:out value="${user.surname}"/></td>
+                    <%--<td><c:out value="${user.subjectId}"/></td>--%>
+                    <%--<td><c:out value="${user.specializationId}"/></td>--%>
+                    <td><c:out value="${user.specialization}"/></td>
+                    <td><c:out value="${user.subject_col}"/></td>
+                    <td><c:out value="${user.mark}"/></td>
 
-        </tr>
+                </tr>
+            </c:forEach>
+        </h3>
 
-        <%
-            while(itList.hasNext()){
-                User objUser=new User();
-                objUser=itList.next();
-        %>
-        <tr>
-            <td><%=objUser.getId() %></td>
-            <td><%=objUser.getName() %></td>
-            <td><%=objUser.getSurname() %></td>
-            <td><%=objUser.getSubjectId() %></td>
-            <td><%=objUser.getSpecialization() %></td>
-            <td><%=objUser.getMark() %></td>
-
-        </tr>
-        <%
-            }
-        %>
-    </table>
+         </table>
+    </form>
 </div>
 </body>
 </html>

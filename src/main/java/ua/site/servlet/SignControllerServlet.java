@@ -24,21 +24,26 @@ public class SignControllerServlet extends HttpServlet {
         HttpSession session = req.getSession();
         String login = req.getParameter("login");
         String password = req.getParameter("password");
+
         User user = new User(login, password);
 
         LoginModal objLoginModal = new LoginModal();
 
         //is that name and login is
-        boolean flag = objLoginModal.checkUserName(user);
+        boolean flag = objLoginModal.checkUserLogin(user);
         if (flag) {
             //main page
             /*resp.sendRedirect("/cabinets/userCabinet.jsp");*/
             System.out.println(login);
             System.out.println(password);
+            System.out.println(user.getName());
             System.out.println("Good acceess user");
 
             //To get userName that was login
-            session.setAttribute("userSession", user.getLogin());
+            session.setAttribute("userNameSession", user.getName());
+            session.setAttribute("userLoginSession", user.getLogin());
+            session.setAttribute("userSubjectSession", user.getSubjectId());
+            session.setAttribute("userMarkSession", user.getMark());
 
             resp.sendRedirect("userCab");
         }

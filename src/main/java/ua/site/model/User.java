@@ -9,18 +9,20 @@ public class User {
     private String name;
     private String surname;
     private int subjectId;
-    private int specialization;
+    private String subject_col;
+    private int specializationId;
+    private String specialization;
     private int mark;
 
 
-    public User(int id, String login, String password, String name, String surname, int subjectId, int specialization) {
+    public User(int id, String login, String password, String name, String surname, int subjectId, int specializationId) {
         this.id = id;
         this.login = login;
         this.password = password;
         this.name = name;
         this.surname = surname;
         this.subjectId = subjectId;
-        this.specialization = specialization;
+        this.specializationId = specializationId;
         this.mark = mark;
 
     }
@@ -32,6 +34,16 @@ public class User {
     public User(String login, String password) {
         this.login = login;
         this.password = password;
+    }
+
+    public User(String login, String password, String name, String surname, String subjectId) {
+        this.id = id;
+        this.login = login;
+        this.password = password;
+        this.name = name;
+        this.surname = surname;
+        this.subjectId = Integer.parseInt(subjectId);
+        this.mark = mark;
     }
 
 
@@ -83,12 +95,12 @@ public class User {
         this.subjectId = subjectId;
     }
 
-    public int getSpecialization() {
-        return specialization;
+    public int getSpecializationId() {
+        return specializationId;
     }
 
-    public void setSpecialization(int specialization) {
-        this.specialization = specialization;
+    public void setSpecializationId(int specializationId) {
+        this.specializationId = specializationId;
     }
 
     public int getMark() {
@@ -97,5 +109,21 @@ public class User {
 
     public void setMark(int mark) {
         this.mark = mark;
+    }
+
+    public String getSubject_col() {
+        return subject_col;
+    }
+
+    public void setSubject_col(String subject_col) {
+        this.subject_col = subject_col;
+    }
+
+    public String getSpecialization() {
+        return specialization;
+    }
+
+    public void setSpecialization(String specialization) {
+        this.specialization = specialization;
     }
 }

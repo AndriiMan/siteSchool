@@ -29,6 +29,9 @@ public class InsertValues {
     public boolean requestIsValid(String login, String password, String name, String surname, String subjectId) {
 
         return name != null && name.length() > 0 &&
+               surname != null && surname.length()>0 &&
+               login != null && login.length()>0 &&
+               password != null && password.length()>0 &&
                 subjectId != null && subjectId.length() > 0 &&
                 subjectId.matches("[+]?\\d+");
     }

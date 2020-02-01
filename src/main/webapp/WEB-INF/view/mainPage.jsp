@@ -13,12 +13,15 @@
 
     <button onclick="location.href='/Project_war/logIn'">Log in</button>
 
-    <button onclick="location.href='/Project_war/showUsers'">UsersAll</button>
+    <form action="showUsers" method="post" >
+        <input type="submit" value="ShowAll"/>
+    </form>
 
+   <%-- <button onclick="location.href='/Project_war/showUsers'">UsersAll</button>--%>
 
     <button onclick="location.href='/Project_war/edit'">Edit</button>
 
-    <button onclick="location.href='/Project_war/LogOut'">Log out</button>
+    <button onclick="location.href='/Project_war/logOut'">Log out</button>
 
 </head>
 <body>

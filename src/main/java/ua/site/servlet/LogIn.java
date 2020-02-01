@@ -15,9 +15,9 @@ public class LogIn extends HttpServlet {
         req.getRequestDispatcher("/Login/logIn.jsp").forward(req, resp);
     }
 
-    @Override
+   /* @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setCharacterEncoding("UTF8");
+       *//* req.setCharacterEncoding("UTF8");
 
         HttpSession session = req.getSession();
         String message=(String)session.getAttribute("loginMessage");
@@ -28,8 +28,7 @@ public class LogIn extends HttpServlet {
             //session.setAttribute("message",message);
             //to delete message
             session.removeAttribute("loginMessage");
-        }
+        }*//*
             doGet(req, resp);
-    }
-
+    }*/
 }
