@@ -4,7 +4,7 @@
 
 <html>
 <head>
-    <title>Insert title here</title>
+    <title>Edit values</title>
 </head>
 <body>
 <%
