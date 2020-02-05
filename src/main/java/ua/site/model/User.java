@@ -25,6 +25,16 @@ public class User {
         this.specializationId = specializationId;
         this.mark = mark;
 
+    }public User(int id, String login, String password, String name, String surname, int subjectId, int specializationId, int mark) {
+        this.id = id;
+        this.login = login;
+        this.password = password;
+        this.name = name;
+        this.surname = surname;
+        this.subjectId = subjectId;
+        this.specializationId = specializationId;
+        this.mark = mark;
+
     }
 
     public User() {
@@ -36,15 +46,13 @@ public class User {
         this.password = password;
     }
 
-    public User(String login, String password, String name, String surname, String subjectId) {
-        this.id = id;
+    public User(String login, String password, String name, String surname) {
         this.login = login;
         this.password = password;
         this.name = name;
         this.surname = surname;
-        this.subjectId = Integer.parseInt(subjectId);
-        this.mark = mark;
     }
+
 
 
     public int getId() {
