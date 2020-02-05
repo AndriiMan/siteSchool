@@ -17,8 +17,15 @@
 
     <label><input type="text" name="surname"></label>Surname<br>
 
-    <label><input type="number" name="subjectId"></label>Subject<br>
+    <%--<label><input type="text" name="subject_col"></label>Subject<br>--%>
 
+    <select name="subject_col">
+        <option value="History">History</option>
+        <option value="Math">Math</option>
+        <option value="Geography">Geography</option>
+        <option value="Ukrainian language">Ukrainian language</option>
+        <option value="English language">English language</option>
+    </select>
 
     <%--Because in room--%>
    <%-- <label><input type="number" name="specialization"></label>Specialization<br>--%>

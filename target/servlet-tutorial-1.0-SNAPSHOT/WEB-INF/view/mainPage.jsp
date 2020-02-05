@@ -9,70 +9,29 @@
         }
     </style>
 
-    <button onclick="location.href='/Project_war/registration'">Registration</button>
+    <button onclick="location.href='/Project_war/registration'">Registration for student</button>
 
-    <button onclick="location.href='/Project_war/logIn'">Log in</button>
+    <button onclick="location.href='/Project_war/logIn'">Log in student</button>
+
+    <button onclick="location.href='/Project_war/logInAdmin'">Log in Admin</button>
 
     <form action="showUsers" method="post" >
-        <input type="submit" value="ShowAll"/>
+        <input type="submit" value="Students list"/>
     </form>
 
+    <%--Delete this to not paste in url--%>
+    <button onclick="location.href='/Project_war/userCab'">Student cabinet</button>
+    <button onclick="location.href='/Project_war/adminCab'">Admin cabinet</button>
    <%-- <button onclick="location.href='/Project_war/showUsers'">UsersAll</button>--%>
 
-    <button onclick="location.href='/Project_war/edit'">Edit</button>
+   <%-- <button onclick="location.href='/Project_war/edit'">Edit</button>--%>
 
     <button onclick="location.href='/Project_war/logOut'">Log out</button>
 
+
+
 </head>
 <body>
-
-
-
-<%--Go to another page only without servlet--%>
-<%--<jsp:forward page="../view/mainPage.jsp"/>--%>
-
-<%--<form action="<c:url value="../view/mainPage.jsp"/>">
-    <input type="submit" value="submit">
-</form>--%>
-<%--
-<form action="<c:url value="../view/mainPage.jsp"/>">
-    <input type="submit" value="submit2">
-</form>--%>
-
-<%--
-
-<h1>Hello!</h1><br/>
-
-<h2>Все пользователи</h2><br/>
-
-<c:forEach var="user" items="${requestScope.users}">
-    <ul>
-
-        <li>Имя: <c:out value="${user.name}"/></li>
-
-        <li>Id: <c:out value="${user.id}"/></li>
-
-        <li>Id: <c:out value="${user.login}"/></li>
-    </ul>
-    <hr/>
-
-</c:forEach>
-
-<h2>Создание нового пользователя</h2><br/>
-
-<form method="post" action="">
-
-    <label><input type="number" name="id"></label>Id<br>
-
-    <label><input type="text" name="name"></label>Name<br>
-
-    <label><input type="text" name="login"></label>Login<br>
-
-    <label><input type="text" name="password"></label>Password<br>
-
-    <input type="submit" value="Ok" name="Ok"><br>
-</form>
---%>
 
 </body>
 </html>

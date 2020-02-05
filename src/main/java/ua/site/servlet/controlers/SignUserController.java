@@ -1,4 +1,4 @@
-package ua.site.servlet;
+package ua.site.servlet.controlers;
 
 import com.mysql.cj.Session;
 import ua.site.modal.LoginModal;
@@ -29,21 +29,20 @@ public class SignUserController extends HttpServlet {
         LoginModal objLoginModal = new LoginModal();
 
         //is that name and login is
-        boolean flag = objLoginModal.checkUserLogin(user);
+        boolean flag = objLoginModal.checkUserInBd(user);
+
         if (flag) {
             //main page
             /*resp.sendRedirect("/cabinets/userCabinet.jsp");*/
             System.out.println(login);
             System.out.println(password);
-            System.out.println(user.getName());
+            //System.out.println(user.getName());
             System.out.println("Good acceess user");
 
             //To get all user data that was login
             setSessionUserData(session,user);
-            /*session.setAttribute("userNameSession", user.getName());
-            session.setAttribute("userSurnameSession", user.getSurname());
-            session.setAttribute("userSubjectSession", user.getSubjectId());
-            session.setAttribute("userMarkSession", user.getMark());*/
+            //delete bad session attribute
+            req.getSession().removeAttribute("loginUserMessage");
 
             resp.sendRedirect("userCab");
         }
@@ -54,15 +53,26 @@ public class SignUserController extends HttpServlet {
 
             //good try nut no, try again
             req.getRequestDispatcher("logIn");
-            session.setAttribute("loginMessage", "Login Failed, User name and Password is Wrong");
+            session.setAttribute("loginUserMessage", "Login Failed, User name and Password is Wrong");
             ////To login
             resp.sendRedirect("logIn");
         }
     }
     public void setSessionUserData(HttpSession session, User user){
+        // Delete session in /logOut
+        session.setAttribute("userIdSession", user.getId());
         session.setAttribute("userNameSession", user.getName());
         session.setAttribute("userSurnameSession", user.getSurname());
+
         session.setAttribute("userSubjectSession", user.getSubject_col());
+
+        session.setAttribute("userSubIdSession", user.getSubjectId());
+
+        session.setAttribute("userLoginSession", user.getLogin());
+        session.setAttribute("userPasswordSession", user.getPassword());
+
+        session.setAttribute("userSpecIdSession", user.getSpecializationId());
         session.setAttribute("userMarkSession", user.getMark());
+
     }
 }

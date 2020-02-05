@@ -21,10 +21,10 @@
                 <td>Name</td>
                 <td>Surname</td>
                 <%--<td>SubjectId</td>--%>
-                <%--<td>SpecializationID</td>--%>
+                <%--<td>Specialization id</td>--%>
                 <td>Specialization</td>
-                <td>Mark</td>
                 <td>Subject</td>
+                <td>Mark</td>
 
             </tr>
             <c:forEach items="${userSession}" var="user">
@@ -37,7 +37,6 @@
                     <td><c:out value="${user.specialization}"/></td>
                     <td><c:out value="${user.subject_col}"/></td>
                     <td><c:out value="${user.mark}"/></td>
-
 
                 </tr>
             </c:forEach>

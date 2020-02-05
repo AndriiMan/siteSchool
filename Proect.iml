@@ -38,5 +38,9 @@
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.18" level="project" />
     <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.6.1" level="project" />
     <orderEntry type="library" name="Maven: com.github.shyiko:mysql-binlog-connector-java:0.18.1" level="project" />
+    <orderEntry type="library" name="Maven: org.mockito:mockito-core:3.2.4" level="project" />
+    <orderEntry type="library" name="Maven: net.bytebuddy:byte-buddy:1.10.5" level="project" />
+    <orderEntry type="library" name="Maven: net.bytebuddy:byte-buddy-agent:1.10.5" level="project" />
+    <orderEntry type="library" name="Maven: org.objenesis:objenesis:2.6" level="project" />
   </component>
 </module>

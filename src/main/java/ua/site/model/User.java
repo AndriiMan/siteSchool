@@ -25,7 +25,9 @@ public class User {
         this.specializationId = specializationId;
         this.mark = mark;
 
-    }public User(int id, String login, String password, String name, String surname, int subjectId, int specializationId, int mark) {
+    }
+
+    public User(int id, String login, String password, String name, String surname, int subjectId, int specializationId, int mark) {
         this.id = id;
         this.login = login;
         this.password = password;
@@ -52,7 +54,6 @@ public class User {
         this.name = name;
         this.surname = surname;
     }
-
 
 
     public int getId() {

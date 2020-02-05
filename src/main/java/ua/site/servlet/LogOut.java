@@ -13,7 +13,20 @@ public class LogOut extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("Is logout");
-        req.getSession().invalidate();
+        req.getSession().removeAttribute("userNameSession");
+        req.getSession().removeAttribute("userSurnameSession");
+        req.getSession().removeAttribute("userSubjectSession");
+        req.getSession().removeAttribute("userMarkSession");
+
+        req.getSession().removeAttribute("adminNameSession");
+        req.getSession().removeAttribute("adminLoginSession");
+        req.getSession().removeAttribute("adminPasswordSession");
+        req.getSession().removeAttribute("userSession");
+        req.getSession().removeAttribute("user");
+
+        req.getSession().removeAttribute("loginAdminMessage");
+        req.getSession().removeAttribute("loginUserMessage");
+
         resp.sendRedirect("home");
     }
 

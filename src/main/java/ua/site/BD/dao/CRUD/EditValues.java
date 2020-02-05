@@ -16,32 +16,67 @@ public class EditValues {
         ResultSet rs=null;
         User objUser=new User();
         try {
-            String querry="select * from mybdtest.schoolchildren where id=?";
+            String querry="select * from mybdtest.schoolchildren " +
+                    "inner join mybdtest.subject on schoolchildren.subjectId=subject.subjectId " +
+                    "inner join mybdtest.specialization on schoolchildren.specializationId=specialization.specialization_id " +
+                    "where id=?";
             ps=connection.prepareStatement(querry);
             ps.setString(1, String.valueOf(id));;
             rs=ps.executeQuery();
             while(rs.next()){
-                objUser.setId(rs.getInt("id"));
-                objUser.setName(rs.getString("name"));
-                objUser.setSurname(rs.getString("surname"));
-                objUser.setLogin(rs.getString("login"));
+                ReadValues.setDateToObjectUser(rs,objUser);
             }
         } catch (Exception e) {
             System.out.println(e);
         }
+
         return objUser;
     }
-    public void editUser(User objUserBean){
+
+    public User getValueOfUserForAdmin(int id) {
+        BDConnection objBDConnection = new BDConnection();
+        Connection connection = objBDConnection.getConnection();
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        User objUser = new User();
+        try {
+            String querry = "select * from mybdtest.schoolchildren " +
+                    "inner join mybdtest.subject on schoolchildren.subjectId=subject.subjectId " +
+                    "where id=?";
+            ps = connection.prepareStatement(querry);
+            ps.setString(1, String.valueOf(id));
+            ;
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                ReadValues.setDateToObjectUserForAdmin(rs, objUser);
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+        return objUser;
+    }
+
+    public void editUser(User objUser){
         BDConnection objBDConnection =new BDConnection();
         Connection connection= objBDConnection.getConnection();
         PreparedStatement ps=null;
         try {
-            String querry="update mybdtest.schoolchildren set name=?,surname=?,login=? where id=?";
+            String querry="update mybdtest.schoolchildren set login=?, password=?, name=?, surname=?, " +
+
+                    " mark=?, subjectId=?, specializationId=?  where id=?";
+
+            System.out.println("In edit user");
+
             ps=connection.prepareStatement(querry);
-            ps.setString(1, objUserBean.getName());;
-            ps.setString(2, objUserBean.getSurname());;
-            ps.setString(3, objUserBean.getLogin());;
-            ps.setInt(4, objUserBean.getId());;
+            ps.setString(1, objUser.getLogin());
+            ps.setString(2, objUser.getPassword());
+            ps.setString(3, objUser.getName());
+            ps.setString(4, objUser.getSurname());
+            ps.setInt(5, objUser.getMark());
+            ps.setInt(6, objUser.getSubjectId());
+            ps.setInt(7, objUser.getSpecializationId());
+            ps.setInt(8, objUser.getId());
             ps.executeUpdate();
         } catch (Exception e) {
             System.out.println(e);
